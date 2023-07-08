@@ -150,7 +150,21 @@ if has('langmap') && exists('+langremap')
 endif
 
 " My personal config :)
-set hlsearch
-set number relativenumber
-set wrap linebreak nolist
-set cursorline
+set hlsearch " Highlight search results
+set number relativenumber "???
+set wrap linebreak nolist "???
+set cursorline "show line number before string with cursor
+set tabstop=2 "tab == 2 spaces
+set synmaxcol=200 "max length of the string 
+filetype plugin indent on "hehe
+set shiftwidth=2 "how many spaces to shift? (1 tab)
+
+set autoindent
+set smartindent " it's good :З
+
+set showmode "show current VIM mode
+
+colorscheme evening
+
+" required for github.com/xavierd/clang_complete
+"let g:clang_library_path='/usr/lib/libclang.so'
