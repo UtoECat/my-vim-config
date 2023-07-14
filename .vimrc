@@ -166,5 +166,8 @@ set showmode "show current VIM mode
 
 colorscheme evening
 
-" required for github.com/xavierd/clang_complete
-"let g:clang_library_path='/usr/lib/libclang.so'
+" for https://github.com/justmao945/vim-clang
+let g:clang_c_completeopt = 'longest,menuone,preview'
+
+" shortcut
+imap <C-c> <C-x><C-o>
